@@ -35,17 +35,18 @@ The purpose of this project is to demonstrate practical experience with Active D
 
 ## Lab 01 — User Account Management
 
-**Status:** Planned
+**Status:** Completed 
 
-A series of common IT Support and Service Desk user-account tasks will be performed using Active Directory.
+A series of common IT Support and Service Desk user-account tasks were performed using Active Directory.
 
-The lab will cover:
+The lab covered:
 
 - Creating a domain user
 - Resetting a user password
-- Unlocking a locked account
+- Unlocking a user account
 - Enabling and disabling an account
 - Verifying account status
+- Configuring and testing account lockout settings
 
 ### Skills Demonstrated
 
@@ -56,6 +57,7 @@ The lab will cover:
 - User account verification
 - Service Desk procedures
 - Windows Server administration
+- PowerShell administration
 
 ### Tools Used
 
@@ -69,19 +71,20 @@ The lab will cover:
 
 ## Lab 02 — Security Groups & Permissions
 
-**Status:** Planned
+**Status:** Completed 
 
-Security groups and permissions will be configured to control access to resources within the Windows domain.
+Security groups and permissions were configured to control access to resources within the Windows domain.
 
-The lab will cover:
+The lab covered:
 
 - Creating security groups
 - Adding users to groups
-- Removing users from groups
 - Creating a shared folder
 - Configuring NTFS permissions
-- Configuring share permissions
+- Configuring SMB share permissions
 - Testing user access
+- Troubleshooting SMB share access
+- Verifying successful file access
 
 ### Skills Demonstrated
 
@@ -92,7 +95,9 @@ The lab will cover:
 - Access control
 - File sharing
 - Windows administration
+- PowerShell administration
 - Permission testing
+- SMB troubleshooting
 
 ### Tools Used
 
@@ -108,26 +113,33 @@ The lab will cover:
 
 ## Lab 03 — Shared Folder Access Troubleshooting
 
-**Status:** Planned
+**Status:** Completed 
 
-A realistic Service Desk scenario will be created where a domain user is unable to access a shared folder.
+A realistic Service Desk troubleshooting scenario was created where a domain user was unable to access a shared folder.
 
-The investigation will examine:
+A controlled access problem was introduced by removing the user's membership from the security group responsible for Finance shared-folder access.
 
-- User account status
+The issue was then investigated, the root cause identified, the user's access restored, and the solution verified.
+
+The investigation examined:
+
+- User access
 - Security group membership
 - NTFS permissions
 - Share permissions
 - Network access
 - Resource configuration
-
-The root cause will be identified, the appropriate configuration will be corrected, and access will be verified.
+- User session and access verification
 
 ### Example Service Desk Scenario
 
 > **User reports:** "I cannot access the Finance shared folder."
 
-The issue will be investigated from the perspective of an IT Support technician.
+The issue was investigated from the perspective of an IT Support technician.
+
+### Troubleshooting Process
+
+**Identify → Investigate → Resolve → Verify → Document**
 
 ### Skills Demonstrated
 
@@ -157,15 +169,16 @@ The issue will be investigated from the perspective of an IT Support technician.
 
 # Evidence
 
-Each completed lab will include supporting screenshots documenting the work performed.
+Each completed lab includes supporting screenshots documenting the work performed.
 
-Evidence may include:
+Evidence includes:
 
 - Active Directory domain configuration
 - User account creation
 - User account properties
 - Password reset
 - Account unlock
+- Account disable and enable
 - Security group configuration
 - Group membership
 - Shared folder configuration
@@ -175,7 +188,7 @@ Evidence may include:
 - Troubleshooting results
 - Final verification
 
-Screenshots will be stored in the repository's `screenshots/` directory and referenced from the relevant lab documentation.
+Screenshots are stored in the repository's `screenshots/` directory and referenced from the relevant lab documentation.
 
 ---
 
@@ -207,7 +220,7 @@ Document the process, commands used, configuration changes, results, and support
 
 # Skills Developed
 
-Through this project, I am developing practical experience in:
+Through this project, I developed practical experience in:
 
 - Active Directory
 - Windows Server administration
@@ -218,12 +231,13 @@ Through this project, I am developing practical experience in:
 - Group membership
 - NTFS permissions
 - Share permissions
-- File sharing
+- SMB file sharing
 - Access control
 - Service Desk troubleshooting
 - Root-cause analysis
 - Problem resolution
 - Verification and testing
+- PowerShell administration
 - Technical documentation
 
 ---
@@ -234,11 +248,11 @@ The goal of this project is to develop practical Active Directory and Windows Se
 
 The labs focus on realistic tasks that an IT Support technician may encounter when managing user accounts, groups, permissions, and access to shared resources within a Windows domain environment.
 
-Each exercise is performed in a controlled virtual environment and documented as evidence of practical experience.
+Each exercise was performed in a controlled virtual environment and documented as evidence of practical experience.
 
 Rather than only documenting theoretical knowledge, the project focuses on hands-on administration and troubleshooting.
 
-The aim is to demonstrate a structured approach to:
+The project demonstrates a structured approach to:
 
 **Identify → Investigate → Resolve → Verify → Document**
 
@@ -246,10 +260,10 @@ The aim is to demonstrate a structured approach to:
 
 # Lab Status
 
-**Completed: 0 of 3 labs**
+**Completed: 3 of 3 labs
 
-- [ ] Lab 01 — User Account Management
-- [ ] Lab 02 — Security Groups & Permissions
-- [ ] Lab 03 — Shared Folder Access Troubleshooting
+- [x] Lab 01 — User Account Management
+- [x] Lab 02 — Security Groups & Permissions
+- [x] Lab 03 — Shared Folder Access Troubleshooting
 
-The repository will be updated as each Active Directory lab is completed and documented.
+All three Active Directory Helpdesk labs have been completed and documented with supporting evidence.
